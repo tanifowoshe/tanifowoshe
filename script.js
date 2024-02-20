@@ -34,7 +34,7 @@ async function searchImages() {
     imageWrapper.classList.add("search-result" );
     const image = document.createElement('img');
     image.src = results.urls.small;
-    image.alt = result.alt_description;
+    image.alt = results.alt_description;
     const imageLink = document.createElement('a');
     imageLink.href = result.links.html;
     imageLink.target = "_blank";
@@ -63,3 +63,4 @@ if (typeof showMore !== 'undefined') {
     searchImages();
     });
 };
+
